@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app" style="text-align: center">
+       <div>
+           <input type="text" v-model="pockid">
+           <div style="font-size: 30px">{{name}}</div>
+            <img v-bind:src="picUrl" alt="" style="height: 150px">
+            <div></div>
+            <button v-on:click = "choosepock(pockid)">CLICK</button>
+       </div>
+    </div>
+        
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <script src="./main.js"></script>
+ 
+</body>
+</html>
