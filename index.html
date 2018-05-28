@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Pokemon API</title>
 </head>
 <body>
     
     <div id="app" style="text-align: center">
-       <div>
+       <div class="center-block mt-5">
+           <label for="input">Pokemon number</label>
            <input type="text" v-model="pockid">
-           <div style="font-size: 30px">{{name}}</div>
-            <img v-bind:src="picUrl" alt="" style="height: 150px">
-            <div></div>
-            <button v-on:click = "choosepock(pockid)">CLICK</button>
+           <div style="font-size: 30px">Name: {{name}}</div>
+           <div style="font-size: 30px">Type: {{type}}</div>
+            <div style="height: 150px"><img v-bind:src="picUrl" alt="Wait for it..." style="height: 150px"></div><br>
+            <button class="btn btn-warning" v-on:click = "choosepock(pockid)">CHOOSE POKEMON</button>
        </div>
     </div>
         
